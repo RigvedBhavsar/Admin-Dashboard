@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar/Navbar';
 import Sidenav from './components/Sidenav/Sidenav.jsx';
+import Home from './pages/Home/Home.jsx';
 
 import './App.css';
 
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Sidenav/>
-        <div className="others"></div>
+        <Home/>
       </div>
     </div>
   );
