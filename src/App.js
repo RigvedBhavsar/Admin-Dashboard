@@ -6,6 +6,10 @@ import Home from './pages/Home/Home.jsx';
 import Userlist from './pages/Userlist/Userlist.jsx';
 import User from "./pages/User/User";
 import NewUser from "./pages/NewUser/NewUser";
+import ProductList from "./pages/ProductList/ProductList";
+import Product from "./pages/Product/Product";
+import NewProduct from "./pages/NewProduct/NewProduct";
+
 import './App.css';
 
 function App() {
@@ -27,12 +31,15 @@ function App() {
 					<Route path="/newUser">
 						<NewUser />
 					</Route>
-					{/* <Route path="/products">
+					<Route path="/products">
 						<ProductList />
-					</Route> */}
-					{/* <Route path="/product/:productId">
+					</Route>
+					<Route path="/product/:productId">
 						<Product />
-					</Route> */}
+					</Route>
+					<Route path="/newproduct">
+            			<NewProduct />
+          			</Route>
 				</Switch>
 			</div>
 		</Router>
