@@ -5,6 +5,7 @@ import Sidenav from './components/Sidenav/Sidenav.jsx';
 import Home from './pages/Home/Home.jsx';
 import Userlist from './pages/Userlist/Userlist.jsx';
 import User from "./pages/User/User";
+import NewUser from "./pages/NewUser/NewUser";
 import './App.css';
 
 function App() {
@@ -23,9 +24,9 @@ function App() {
 					<Route path="/user/:userId">
 						<User />
 					</Route>
-					{/* <Route path="/newUser">
+					<Route path="/newUser">
 						<NewUser />
-					</Route> */}
+					</Route>
 					{/* <Route path="/products">
 						<ProductList />
 					</Route> */}

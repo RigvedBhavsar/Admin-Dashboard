@@ -2,12 +2,16 @@ import React from "react";
 import "./Navbar.css";
 import { NotificationsNone, Language, Settings } from "@material-ui/icons";
 import profile from '../../assests/profile.jpeg'
+import {Link} from 'react-router-dom';
+
 const Navbar = () => {
 	return (
 		<div className="topbar">
 			<div className="topbarWrapper">
 				<div className="topLeft">
-					<span className="logo">Admin</span>
+					<Link to='/' className="link">
+						<span className="logo">Admin</span>
+					</Link>
 				</div>
 				<div className="topRight">
 					<div className="topbarIconContainer">
